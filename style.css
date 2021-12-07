@@ -32,6 +32,16 @@ ul {
   list-style-type: none;
 }
 
+small {
+  /* display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 5rem; */
+  display: block;
+  padding-right: 35%;
+  padding-top: 0.5rem;
+}
+
 .card-container {
   display: flex;
   align-items: center;
@@ -98,14 +108,21 @@ form {
   position: relative;
 }
 
-form input[type="email"] {
+form input[type="text"] {
   border-radius: 30px;
   padding: 12px 0px 12px 12px;
   width: 58%;
   border: 1px solid #ece6e6;
 }
 
-form input[type="email"]::placeholder {
+form input[type="text"] .error {
+  border-radius: 30px;
+  padding: 12px 0px 12px 12px;
+  width: 58%;
+  border: 1px solid #ece6e6;
+}
+
+form input[type="text"]::placeholder {
   margin-left: 5px;
   color: #ece6e6;
 }
@@ -116,6 +133,14 @@ input:focus {
 
 button {
   width: 12%;
+  height: 48px;
+  border-radius: 30px;
+  border: none;
+  position: absolute;
+  bottom: 79%;
+  left: 67%;
+  z-index: 1;
+  transition: 0.2s ease-in-out;
   background: #ffe6e5; /* Old browsers */
   background: -moz-linear-gradient(
     left,
@@ -136,14 +161,6 @@ button {
     #f29796 100%
   ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffe6e5', endColorstr='#f29796',GradientType=1 ); /* IE6-9 */
-  height: 48px;
-  border-radius: 30px;
-  border: none;
-  position: absolute;
-  bottom: 75%;
-  left: 67%;
-  z-index: 1;
-  transition: 0.2s ease-in-out;
 }
 
 button:hover {
@@ -242,7 +259,7 @@ Media Queries
     order: 2;
   }
 
-  form input[type="email"] {
+  form input[type="text"] {
     border-radius: 30px;
     padding: 12px 0px 12px 12px;
     width: 75%;
@@ -250,10 +267,10 @@ Media Queries
   }
 
   button {
-    width: 16%;
+    width: 19%;
     height: 48px;
     position: absolute;
-    bottom: 75%;
+    bottom: 78%;
     left: 72%;
   }
 }
@@ -342,7 +359,7 @@ Tablet and landscape mobile
     order: 2;
   }
 
-  form input[type="email"] {
+  form input[type="text"] {
     border-radius: 30px;
     padding: 12px 0px 12px 12px;
     width: 55%;
@@ -353,7 +370,7 @@ Tablet and landscape mobile
     width: 10%;
     height: 48px;
     position: absolute;
-    bottom: 75%;
+    bottom: 78%;
     left: 68%;
   }
 }
