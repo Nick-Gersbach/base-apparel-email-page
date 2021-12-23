@@ -114,14 +114,7 @@ form {
   position: relative;
 }
 
-form input[type="text"] {
-  border-radius: 30px;
-  padding: 12px 0px 12px 12px;
-  width: 58%;
-  border: 1px solid #ece6e6;
-}
-
-form input[type="text"] {
+form input[type="email"] {
   border-radius: 30px;
   padding: 12px 0px 12px 12px;
   width: 58%;
@@ -275,7 +268,7 @@ Media Queries
     order: 2;
   }
 
-  form input[type="text"] {
+  form input[type="email"] {
     border-radius: 30px;
     padding: 12px 0px 12px 12px;
     width: 75%;
@@ -380,7 +373,7 @@ Tablet and landscape mobile
     order: 2;
   }
 
-  form input[type="text"] {
+  form input[type="email"] {
     border-radius: 30px;
     padding: 12px 0px 12px 12px;
     width: 55%;
