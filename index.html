@@ -39,9 +39,12 @@
             </p>
           </div>
           <form id="form" class="form">
-            <input type="text" id="email" placeholder="Email Address" />
-            <small>Error Message</small>
-            <button>
+            <input type="text" id="email-input" placeholder="Email Address" />
+            <div class="email-error">
+              <img id="error-img" src="./images/icon-error.svg" alt="" />
+            </div>
+            <small id="small-text">Please Provide a valid email</small>
+            <button id="email-btn">
               <img class="submit-arrow" src="/images/icon-arrow.svg" alt="" />
             </button>
           </form>
